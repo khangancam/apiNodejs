@@ -10,11 +10,11 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // api routes
-app.use('/users', require('./users/users.controller'));
+// app.use('/users', require('./users/users.controller'));
 
 // global error handler
-app.use(errorHandler);
+//app.use(errorHandler);
 
 // start server
-const port = process.env.NODE_ENV === 'production' ? (process.env.PORT || 80) : 4000;
+const port = process.env.NODE_ENV === 'production' ? (process.env.PORT || 80) : 3000;
 app.listen(port, () => console.log('Server listening on port ' + port));
